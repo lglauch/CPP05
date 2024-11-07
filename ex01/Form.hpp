@@ -1,6 +1,9 @@
 #pragma once
 
 #include <iostream>
+#include "Bureaucrat.hpp"
+
+class Bureaucrat;
 
 class Form
 {
@@ -21,7 +24,7 @@ class Form
 			public:
 				const char* what() const throw()
 				{
-					return "Grade too high!";
+					return "Form grade too high!";
 				}
 		};
 
@@ -30,7 +33,7 @@ class Form
 			public:
 				const char* what() const throw()
 			{
-				return "Grade too low!";
+				return "Form grade too low!";
 			}
 		};
 
@@ -38,6 +41,7 @@ class Form
 		int	getGradeSign();
 		int	getGradeExec();
 		bool getSigned();
+		void beSigned(Bureaucrat &b);
 };
 
 std::ostream& operator<<(std::ostream &out, Form &b);

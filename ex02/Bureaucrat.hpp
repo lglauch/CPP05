@@ -2,9 +2,9 @@
 
 #include <iostream>
 #include <ostream>
-#include "Form.hpp"
+#include "AForm.hpp"
 
-class Form;
+class AForm;
 
 class Bureaucrat
 {
@@ -37,10 +37,10 @@ class Bureaucrat
 		};
 
 		std::string getName();
-		int	getGrade();
+		int	getGrade() const;
 		int	decreaseGrade();
 		int	increaseGrade();
-		void signForm(Form &f);
+		void signAForm(AForm &f);
 };
 
 std::ostream& operator<<(std::ostream &out, Bureaucrat &b);

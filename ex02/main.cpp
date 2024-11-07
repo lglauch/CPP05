@@ -1,5 +1,5 @@
 #include "Bureaucrat.hpp"
-#include "Form.hpp"
+#include "AForm.hpp"
 
 int main(void)
 {
@@ -7,17 +7,17 @@ int main(void)
 	{
 		Bureaucrat b("Jkauker", 1);
 		Bureaucrat a("Dieter", 100);
-		Form f("KFZ", 99, 20);
-		Form t("Copy", 20, 10);
-		Form z(f);
+		AForm f("KFZ", 99, 20);
+		AForm t("Copy", 20, 10);
+		AForm z(f);
 		z = t;
 		
-		b.signForm(z);
+		b.signAForm(z);
 		z.beSigned(b);
-		b.signForm(z);
-		a.signForm(f);
+		b.signAForm(z);
+		a.signAForm(f);
 		f.beSigned(a);
-		a.signForm(f);
+		a.signAForm(f);
 		std::cout << a << std::endl;
 		std::cout << b << std::endl;
 		// b.decreaseGrade();
