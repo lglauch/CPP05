@@ -12,4 +12,6 @@ class RobotomyRequestForm : AForm
 		RobotomyRequestForm(const RobotomyRequestForm &old);
 		RobotomyRequestForm& operator=(const RobotomyRequestForm &old);
 		~RobotomyRequestForm();
+
+		void execForm() const override;
 };
