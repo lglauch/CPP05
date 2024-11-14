@@ -7,7 +7,7 @@ int main(void)
 	{
 		Bureaucrat b("Jkauker", 1);
 		Bureaucrat a("Dieter", 100);
-		Form f("KFZ", 99, 20);
+		Form f("KFZ", 100, 20);
 		Form t("Copy", 20, 10);
 		Form z(f);
 		z = t;

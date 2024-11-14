@@ -15,9 +15,18 @@ int main(void)
 		std::cout << b << std::endl;
 		std::cout << c << std::endl;
 
+		std::cout << "Name of b is" << b.getName() << std::endl;
+		std::cout << "Grade of b is " << b.getGrade() << std::endl;
 		// b.decreaseGrade();
 		// a.decreaseGrade();
-		// b.increaseGrade();
+		b.decreaseGrade();
+
+		std::cout << "Grade of b is " << b.getGrade() << std::endl;
+
+		b.increaseGrade();
+
+		std::cout << "Grade of b is " << b.getGrade() << std::endl;
+
 		// b.increaseGrade();
 	}
 	catch(const std::exception & e)
