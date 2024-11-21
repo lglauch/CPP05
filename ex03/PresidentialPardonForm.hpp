@@ -2,6 +2,9 @@
 
 #include "AForm.hpp"
 
+#define GRAY "\033[90m"
+#define RESET "\033[0m"
+
 
 class PresidentialPardonForm : public AForm
 {
@@ -13,5 +16,5 @@ class PresidentialPardonForm : public AForm
 		PresidentialPardonForm& operator=(const PresidentialPardonForm &old);
 		~PresidentialPardonForm();
 
-		void execForm() const override;
+		void execForm() const;
 };

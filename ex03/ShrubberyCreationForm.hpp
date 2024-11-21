@@ -2,6 +2,8 @@
 
 #include "AForm.hpp"
 
+#define GRAY "\033[90m"
+#define RESET "\033[0m"
 
 class ShrubberyCreationForm : public AForm
 {
@@ -13,5 +15,5 @@ class ShrubberyCreationForm : public AForm
 		ShrubberyCreationForm& operator=(const ShrubberyCreationForm &old);
 		~ShrubberyCreationForm();
 
-		void execForm() const override;
+		void execForm() const;
 };

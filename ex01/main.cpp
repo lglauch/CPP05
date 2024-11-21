@@ -12,11 +12,15 @@ int main(void)
 		Form z(f);
 		z = t;
 		
+		std::cout << f << std::endl;
+		std::cout << t << std::endl;
+		std::cout << z << std::endl;
 		b.signForm(z);
 		z.beSigned(b);
 		b.signForm(z);
 		a.signForm(f);
 		f.beSigned(a);
+		std::cout << "Signed status: " << f.getSigned() << std::endl;
 		a.signForm(f);
 		std::cout << a << std::endl;
 		std::cout << b << std::endl;

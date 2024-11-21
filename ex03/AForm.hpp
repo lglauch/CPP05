@@ -4,6 +4,9 @@
 #include <string.h>
 #include "Bureaucrat.hpp"
 
+#define GRAY "\033[90m"
+#define RESET "\033[0m"
+
 class Bureaucrat;
 
 class AForm

@@ -7,7 +7,7 @@
 
 Intern::Intern(void)
 {
-	std::cout << "Intern default constructor called" << std::endl;
+	std::cout << GRAY << "Intern default constructor called" << RESET << std::endl;
 }
 
 Intern::Intern(const Intern &old)
@@ -25,7 +25,7 @@ Intern& Intern::operator=(const Intern &old)
 
 Intern::~Intern(void)
 {
-	std::cout << "Intern destructor called" << std::endl;
+	std::cout << GRAY << "Intern destructor called" << GRAY << std::endl;
 }
 
 typedef AForm* (*FormCreator)(std::string target);

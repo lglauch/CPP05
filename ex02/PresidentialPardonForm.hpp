@@ -13,5 +13,5 @@ class PresidentialPardonForm : public AForm
 		PresidentialPardonForm& operator=(const PresidentialPardonForm &old);
 		~PresidentialPardonForm();
 
-		void execForm() const override;
+		void execForm() const;
 };

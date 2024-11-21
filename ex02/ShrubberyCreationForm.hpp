@@ -13,5 +13,5 @@ class ShrubberyCreationForm : public AForm
 		ShrubberyCreationForm& operator=(const ShrubberyCreationForm &old);
 		~ShrubberyCreationForm();
 
-		void execForm() const override;
+		void execForm() const;
 };

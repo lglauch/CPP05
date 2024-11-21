@@ -2,6 +2,8 @@
 
 #include "AForm.hpp"
 
+#define GRAY "\033[90m"
+#define RESET "\033[0m"
 
 class RobotomyRequestForm : public AForm
 {
@@ -13,5 +15,5 @@ class RobotomyRequestForm : public AForm
 		RobotomyRequestForm& operator=(const RobotomyRequestForm &old);
 		~RobotomyRequestForm();
 
-		void execForm() const override;
+		void execForm() const;
 };

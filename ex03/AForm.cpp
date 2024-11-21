@@ -2,7 +2,7 @@
 
 AForm::AForm(const std::string name, const int gradeSign, const int gradeExec) : _name(name), _signed(false), _gradeSign(gradeSign), _gradeExec(gradeExec)
 {
-	std::cout << "AForm default constructor called" << std::endl;
+	std::cout << GRAY << "AForm default constructor called" << RESET << std::endl;
 	if (gradeSign < 1 || gradeExec < 1)
 		throw GradeTooHighException();
 	if (gradeSign > 150 || gradeExec > 150)
@@ -26,7 +26,7 @@ AForm& AForm::operator=(const AForm &old)
 
 AForm::~AForm(void)
 {
-	std::cout << "AForm destructor called" << std::endl;
+	std::cout << GRAY << "AForm destructor called" << RESET << std::endl;
 }
 
 std::string AForm::getName(void) const

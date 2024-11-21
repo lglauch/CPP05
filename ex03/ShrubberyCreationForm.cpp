@@ -8,7 +8,7 @@ ShrubberyCreationForm::ShrubberyCreationForm(std::string target) : AForm("Shrubb
 
 ShrubberyCreationForm::ShrubberyCreationForm(const ShrubberyCreationForm &old) : AForm(old), _target(old._target)
 {
-	std::cout << "ShrubberyCreationForm copy constructor called" << std::endl;
+	std::cout << GRAY << "ShrubberyCreationForm copy constructor called" << RESET << std::endl;
 }
 
 ShrubberyCreationForm& ShrubberyCreationForm::operator=(const ShrubberyCreationForm &old)
@@ -23,7 +23,7 @@ ShrubberyCreationForm& ShrubberyCreationForm::operator=(const ShrubberyCreationF
 
 ShrubberyCreationForm::~ShrubberyCreationForm(void)
 {
-	std::cout << "ShrubberyCreationForm destructor called" << std::endl;
+	std::cout << GRAY << "ShrubberyCreationForm destructor called" << RESET << std::endl;
 }
 
 void ShrubberyCreationForm::execForm() const

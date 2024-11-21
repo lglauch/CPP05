@@ -2,7 +2,7 @@
 
 Bureaucrat::Bureaucrat(const std::string name, int grade) : _name(name), _grade(grade)
 {
-	std::cout << "Bureaucrat default constructor called" << std::endl;
+	std::cout << GRAY << "Bureaucrat default constructor called" << RESET << std::endl;
 	if (grade < 1)
 		throw GradeTooHighException();
 	if (grade > 150)
@@ -18,13 +18,13 @@ Bureaucrat& Bureaucrat::operator=(const Bureaucrat &old)
 {
 	if (this != &old)
 		_grade = old._grade;
-	std::cout << "Bureaucrat copy assignment operator called" << std::endl;
+	std::cout << GRAY << "Bureaucrat copy assignment operator called" << RESET << std::endl;
 	return (*this);
 }
 
 Bureaucrat::~Bureaucrat(void)
 {
-	std::cout << "Bureaucrat destructor called" << std::endl;
+	std::cout << GRAY << "Bureaucrat destructor called" << RESET << std::endl;
 }
 
 std::string	Bureaucrat::getName(void) const

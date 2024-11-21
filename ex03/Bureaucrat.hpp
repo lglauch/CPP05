@@ -4,6 +4,9 @@
 #include <ostream>
 #include "AForm.hpp"
 
+#define GRAY "\033[90m"
+#define RESET "\033[0m"
+
 class AForm;
 
 class Bureaucrat
